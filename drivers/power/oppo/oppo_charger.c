@@ -3486,7 +3486,7 @@ void oppo_chg_set_led_status(bool val)
 	if (!g_charger_chip) {
 		return;
 	} else {
-		g_charger_chip->led_on = val;
+		g_charger_chip->led_on = false;
 		g_charger_chip->led_on_change = true;
 	}
 }
